@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* ---------- Lab Task 3 styles ---------- */
+#form{background-color: #dddddd;text-align: center; margin: 20px 500px; padding: 20px }
+#input{background-color: #d5ffff; width:80%;margin: 0 auto;}
+
+/* ---------- Lab Task 4 styles ---------- */
+#lab4{background-image: url('pattern.jpg'); background-size: 80px; background-color: #d5e3e0; font-family: Century Gothic, sans-serif; padding: 10px 0 30px 0;}
+#page{background-color: white; width: 600px; margin: 0 auto; padding: 10px;}
+#header{background-color: #a8f0ee; text-align: right; padding: 5px 10px; margin-bottom: 10px;}
+#friends{background-color: #40e0d0; border: 4px solid #1a9d93; width: 130px; float: left; padding: 10px;}
+#entries{margin-left: 170px;}
+#entry1{background-color: #e6fafa; border: 3px solid #b8e8e8; padding: 5px; margin-bottom: 10px; height: 150px;}
+#entry2{background-color: #e6fafa; border: 3px solid #b8e8e8; padding: 5px; margin-bottom: 10px; height: 190px;}
+#date1{border-bottom: 2px dashed blue;}
+#date2{border-bottom: 2px dashed blue;}
+</style>
+		<title> My Lab Tasks </title>
+	</head>
+<body>
+
+<!-- ======================= LAB TASK 3 ======================= -->
+<div id="lab3">
+<h1 style="text-align: center;">LAB TASK 3: Hotel Reservation Form </h1>
+<div id="form">
+	<h2 style="color: red;"> Continental Hotel Reservation Form </h2>
+<div id="input">
+	<form action="/action_page.php">
+<table border=2 align="center" cellpadding="6">
+<tr>
+<th style="text-align:right; border: 1px solid black;">Name: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value="" style="text-align:right;"></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">eMail: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="email" value=""></td></tr>
+<tr> 
+<th style="text-align:right;border: 1px solid black;">Mobile No:</th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Arrival Time: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Departure Date: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="date" id="dep1" value=""> <input type="date" id="dep2" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Room Type: </th>
+<td style="border: 1px solid black;"> 
+<label><input type="radio" name="room" value="Single"> Single</label>
+<label><input type="radio" name="room" value="Double"> Double</label>
+<label><input type="radio" name="room" value="Presidential Suite"> Presidential Suite</label>
+</td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">Preferences</th>
+<td style="text-align:left;border: 1px solid black;">
+<label><input type="checkbox" name="pref" value="nonsmoking"> Non-Smoking</label><br>
+<label><input type="checkbox" name="pref" value="internet"> Internet</label><br>
+<label><input type="checkbox" name="pref" value="mattress"> Firm Mattress</label>
+</td>
+</tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">Mode of Payment</th>
+<td style="text-align:left;border: 1px solid black;">
+<label><input type="checkbox" name="pay" value="cash"> Cash</label>
+<label><input type="checkbox" name="pay" value="check"> Check</label><br>
+<label><input type="checkbox" name="pay" value="card"> Credit Card</label>
+<select name="card">
+<option>Select Card</option>
+<option>Visa</option>
+<option>MasterCard</option>
+</select>
+</td></tr>
+<tr>
+<td colspan="2" style="text-align:center; border: 1px solid black;">
+<input type="submit" value="Send Data">
+</td>
+</tr>
+</table>
+</form>
+</div></div>
+</div>
+
+<!-- ======================= LAB TASK 4 ======================= -->
+<div id="lab4">
+<h1 style="text-align: center"> LAB TASK 04 </h1>
+<div id="page">
+
+	<div id="header">
+		<h1 style="color: #1fa8a8; font-weight: normal; margin: 0;"> Victoria's Journal </h1>
+		<p style="color: #1a6e6e; margin: 0;"> So fresh and so clean </p>
+	</div>
+
+	<div id="friends">
+		<h2 style="color: #1fa8a8; font-weight: normal; margin-top: 0;"> Friends </h2>
+		<ul style="font-size: 13px; padding-left: 15px;">
+			<li style="color: #c0605a;"> 190 Buddies </li>
+			<li style="color: white;"> Big Will </li>
+			<li style="color: #c0605a;"> Cousin the Librarian </li>
+		</ul>
+	</div>
+
+	<div id="entries">
+
+		<div id="entry1">
+			<h2 style="color: #1fa8a8; font-weight: normal; margin: 5px 0;"> <span id="date1">04/09/08:</span> Spatulas </h2>
+			<img src="spatula.jpg" style="float: right; width: 100px; margin-left: 10px;">
+			<p style="color: #c0605a; font-size: 14px;"> Yesterday, I went to the store and got some much needed spatulas! (what better way to say I love myself than to buy myself a spatula?) </p>
+		</div>
+
+		<div id="entry2">
+			<h2 style="color: #1fa8a8; font-weight: normal; margin: 5px 0;"> <span id="date2">04/08/08:</span> Cookie Cupcakes </h2>
+			<img src="cookie.jpg" style="float: right; width: 130px; margin-left: 10px;">
+			<p style="color: #c0605a; font-size: 14px;"> My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, " Sometimes me think what is love, and then me think love is what cookie is for. Me give up the last cookie for you. " I woonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE!) </p>
+		</div>
+
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>
