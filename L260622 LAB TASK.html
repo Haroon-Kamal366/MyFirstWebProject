@@ -1,0 +1,69 @@
+<html>
+	<head>
+<style>
+#form{background-color: #dddddd;text-align: center; margin: 20px 500px; padding: 20px }
+#input{background-color: #d5ffff; width:80%;margin: 0 auto;}
+</style>
+		<title> L260622 LAB TASK </title>
+	</head>
+<body>
+<h1 style="text-align: center";>LAB TASK 3: Hotel Reservation Form </h1>
+<div id="form">
+	<h2 style="color: red";> Continental Hotel Reservation Form </h2>
+<div id="input">
+	<form action="/action_page.php">
+<table border=2 align="center" cellpadding="6">
+<tr>
+<th style="text-align:right; border: 1px solid black;">Name: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value="" style="text-align:right;"></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">eMail: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="email" value=""></td></tr>
+<tr> 
+<th style="text-align:right;border: 1px solid black;">Mobile No:</th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Arrival Time: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="text" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Departure Date: </th>
+<td style="text-align:left;border: 1px solid black;"> <input type="date" id="dep" value=""> <input type="date" id="dep" value=""></td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;"> Room Type: </th>
+<td style="border: 1px solid black;"> 
+<label><input type="radio" value="Single"> Single</label>
+<label><input type="radio" value="Double"> Double</label>
+<label><input type="radio" value="Presidential Suite"> Presidential Suite</label>
+</td></tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">Preferences</th>
+<td style="text-align:left;border: 1px solid black;">
+<label><input type="checkbox" name="pref" value="nonsmoking"> Non-Smoking</label><br>
+<label><input type="checkbox" name="pref" value="internet"> Internet</label><br>
+<label><input type="checkbox" name="pref" value="mattress"> Firm Mattress</label>
+</td>
+</tr>
+<tr>
+<tr>
+<th style="text-align:right;border: 1px solid black;">Mode of Payment</th>
+<td style="text-align:left;border: 1px solid black;">
+<label><input type="checkbox" name="pay" value="cash"> Cash</label>
+<label><input type="checkbox" name="pay" value="check"> Check</label><br>
+<label><input type="checkbox" name="pay" value="card"> Credit Card</label>
+<select name="card">
+<option>Select Card</option>
+<option>Visa</option>
+<option>MasterCard</option>
+</select>
+</td></tr>
+<tr>
+<td colspan="2" style="text-align:center; border: 1px solid black;">
+<input type="submit" value="Send Data">
+</td>
+</tr>
+</table>
+</table>
+</form>
+</div></div>
+</body>
+</html>
